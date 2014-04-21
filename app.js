@@ -13,7 +13,8 @@ var logger = require('morgan');
 var errorHandler = require('errorhandler');
 var csrf = require('lusca').csrf();
 var methodOverride = require('method-override');
-
+var fs = require('fs');
+var hbs = require('hbs');
 var MongoStore = require('connect-mongo')({ session: session });
 var flash = require('express-flash');
 var path = require('path');
@@ -67,7 +68,8 @@ var csrfWhitelist = [
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname + '/views/partials');
 app.use(connectAssets({
   paths: ['public/css', 'public/js'],
   helperContext: app.locals
@@ -156,26 +158,6 @@ app.get('/api/linkedin', passportConf.isAuthenticated, passportConf.isAuthorized
  * OAuth routes for sign-in.
  */
 
-app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email', 'user_location'] }));
-app.get('/auth/facebook/callback', passport.authenticate('facebook', { failureRedirect: '/login' }), function(req, res) {
-  res.redirect(req.session.returnTo || '/');
-});
-app.get('/auth/github', passport.authenticate('github'));
-app.get('/auth/github/callback', passport.authenticate('github', { failureRedirect: '/login' }), function(req, res) {
-  res.redirect(req.session.returnTo || '/');
-});
-app.get('/auth/google', passport.authenticate('google', { scope: 'profile email' }));
-app.get('/auth/google/callback', passport.authenticate('google', { failureRedirect: '/login' }), function(req, res) {
-  res.redirect(req.session.returnTo || '/');
-});
-app.get('/auth/twitter', passport.authenticate('twitter'));
-app.get('/auth/twitter/callback', passport.authenticate('twitter', { failureRedirect: '/login' }), function(req, res) {
-  res.redirect(req.session.returnTo || '/');
-});
-app.get('/auth/linkedin', passport.authenticate('linkedin', { state: 'SOME STATE' }));
-app.get('/auth/linkedin/callback', passport.authenticate('linkedin', { failureRedirect: '/login' }), function(req, res) {
-  res.redirect(req.session.returnTo || '/');
-});
 
 /**
  * OAuth routes for API examples that require authorization.

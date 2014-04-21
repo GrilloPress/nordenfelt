@@ -275,10 +275,10 @@ exports.postReset = function(req, res, next) {
     },
     function(user, done) {
       var smtpTransport = nodemailer.createTransport('SMTP', {
-        service: 'SendGrid',
+        service: 'Mailgun',
         auth: {
-          user: secrets.sendgrid.user,
-          pass: secrets.sendgrid.password
+          user: secrets.mailgun.login,
+          pass: secrets.mailgun.password
         }
       });
       var mailOptions = {
