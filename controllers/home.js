@@ -14,3 +14,9 @@ exports.about = function(req, res) {
     title: 'About'
   });
 };
+
+exports.news = function(req, res) {
+  res.render('news', {
+    title: 'News'
+  });
+};
