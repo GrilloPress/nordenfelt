@@ -13,13 +13,13 @@ logs
 results
 tmp
 
+.codio
+
 npm-debug.log
 node_modules
 .idea
 *.iml
 .DS_Store
 Thumbs.db
-
-public/css/styles.css
 
 builtAssets
