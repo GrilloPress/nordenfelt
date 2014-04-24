@@ -1,5 +1,7 @@
 /*  
- * Work based on STANLEY - Free Bootstrap 3 Theme by Carlos Alvarez http://alvarez.is
+ * Work based on STANLEY - Free Bootstrap 3 Theme by Carlos Alvarez http://alvarez.is licensed under 
+ * the http://creativecommons.org/licenses/by/3.0/
+ * 
  * Extensively altered and added to by Andrew Duckworth for Nordenfelt and the Working Together team.
  *
  */
@@ -166,7 +168,7 @@ a:after {
 
 
 #footer {
-	background-color: #09afaf;
+	background-color: #07918F;
 	padding-top: 50px;
 	padding-bottom: 50px;
   color: white;
@@ -266,5 +268,32 @@ bt {
 #link {
   color: white;
 }
-  
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
 }
