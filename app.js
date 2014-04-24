@@ -63,7 +63,7 @@ var day = hour * 24;
 var week = day * 7;
 
 var csrfWhitelist = [
-  '/this-url-will-bypass-csrf'
+  '/contact'
 ];
 
 app.set('port', process.env.PORT || 3000);
