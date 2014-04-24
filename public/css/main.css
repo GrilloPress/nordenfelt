@@ -1,10 +1,9 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
+/*  
+ * Work based on STANLEY - Free Bootstrap 3 Theme by Carlos Alvarez http://alvarez.is licensed under 
+ * the http://creativecommons.org/licenses/by/3.0/
+ * 
+ * Extensively altered and added to by Andrew Duckworth for Nordenfelt and the Working Together team.
  *
- * Project Name: STANLEY - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
  */
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -87,7 +86,7 @@ a:after {
 
 .ieroom {
     display: block;
-    height: 80px;
+    height: 65px;
     border: 0;
     border-top: 0px solid #ccc;
     margin: 1em 0;
@@ -95,7 +94,7 @@ a:after {
 }
 
 .cathedral {
-    height: 180px;
+    height: 162px;
     border: 0;
     border-top: 0px;
     margin: 1em 0;
@@ -161,15 +160,15 @@ a:after {
 
 /* +++++ WRAP SECTIONS +++++ */
 
-#ww {
-	padding-top: 70px;
-	padding-bottom: 70px;
-	background-color: #f2f2f2;
+#brandwrap {
+	padding-top: 60px;
+	padding-bottom: 30px;
+
 }
 
 
 #footer {
-	background-color: #09afaf;
+	background-color: #07918F;
 	padding-top: 50px;
 	padding-bottom: 50px;
   color: white;
@@ -264,4 +263,37 @@ bt {
 .glyphicon {
 	font-size: 40px;
 	color: #09afad;
+}
+
+#link {
+  color: white;
+}
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
 }
