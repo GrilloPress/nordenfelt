@@ -144,6 +144,7 @@ app.use(function(req, res, next) {
 app.get('/', homeController.index);
 app.get('/about', homeController.about);
 app.get('/news', homeController.news);
+app.get('/team', homeController.team);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
