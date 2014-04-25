@@ -7,7 +7,7 @@ basic Express website with a home page, about page, contact form and a simple bl
 The idea is essentially a reusable and easy to configure starting place to quickly and efficiently build 
 small sites and apps with JavaScript end to end.
 
-*The Name: nordenfelt
+**The Name: nordenfelt**
 
 Nordenfelt is the name of a old class of Submarine created by Thorsten Nordenfelt
 
