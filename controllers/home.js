@@ -20,3 +20,9 @@ exports.news = function(req, res) {
     title: 'News'
   });
 };
+
+exports.team = function(req, res) {
+  res.render('team', {
+    title: 'Team'
+  });
+};
