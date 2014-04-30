@@ -109,8 +109,8 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
+	padding-bottom: 55px;
+	padding-top: 65px;
 }
 
 .navbar-inverse {
@@ -285,7 +285,7 @@ bt {
   padding: 40px;
   margin-top: 15px;
   margin-bottom: 15px;
-  background-image:url('http://franklincode.coursekit.com.s3.amazonaws.com/30e1ceef65aa4ba1a1bb66056eeb09b6/sass/img/onboarding-bg.jpg');
+  background-image:url('/img/1.jpg');
   background-size:cover;
 }
 
