@@ -270,7 +270,7 @@ bt {
 }
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -285,8 +285,8 @@ bt {
   padding: 40px;
   margin-top: 15px;
   margin-bottom: 15px;
-  color: #FFFFFF;
-  background-color: #09afad;
+  color: inherit;
+  background-color: #d6eced;
 }}
 
 
