@@ -312,9 +312,15 @@ bt {
     width: 100%;
 }
 
+.endblock {
+  background-size: cover;
+  color: #FFFFFF;
+}
 
-
-
+#secondbrand {
+  background-color: #89AFA3;
+  background-size: cover;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
