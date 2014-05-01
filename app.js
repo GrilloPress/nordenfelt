@@ -62,7 +62,7 @@ var day = hour * 24;
 var week = day * 7;
 
 var csrfWhitelist = [
-  '/contact'
+  // '/contact'
 ];
 
 app.set('port', process.env.PORT || 3000);
@@ -144,6 +144,15 @@ app.get('/', homeController.index);
 app.get('/about', homeController.about);
 app.get('/news', homeController.news);
 app.get('/team', homeController.team);
+
+
+// CONTACT US ROUTES
+app.get('/contact', contactController.getContact);
+app.post('/contact', contactController.postContact);
+
+// USER ROUTES
+
+/*
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
@@ -153,8 +162,6 @@ app.get('/reset/:token', userController.getReset);
 app.post('/reset/:token', userController.postReset);
 app.get('/signup', userController.getSignup);
 app.post('/signup', userController.postSignup);
-app.get('/contact', contactController.getContact);
-app.post('/contact', contactController.postContact);
 
 /** FUTURE USE
  * 
