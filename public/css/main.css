@@ -102,6 +102,15 @@ a:after {
     padding-bottom: 0x;
 }
 
+.feature {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 0px;
+    margin: 1em 0;
+    padding: 1px;
+}
+
 
 .navbar {
 	text-transform: uppercase;
@@ -293,7 +302,15 @@ bt {
   color: #fff;
 }
 
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
 
+.thumbnail img {
+    width: 100%;
+}
 
 
 
