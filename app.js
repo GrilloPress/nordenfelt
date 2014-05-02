@@ -152,8 +152,8 @@ app.get('/news', homeController.news);
 
 app.get('/workstreams', homeController.workstreams);
 app.get('/workstreams/procurement', homeController.procurement);
-app.get('/workstreams/consistencyincare', homeController.consistency);
-app.get('/workstreams/collaborativeworking', homeController.collaborative);
+app.get('/workstreams/consistency-in-care', homeController.consistency);
+app.get('/workstreams/collaborative-working', homeController.collaborative);
 app.get('/workstreams/specialist-services', homeController.specialist);
 app.get('/workstreams/locums', homeController.locums);
 app.get('/workstreams/infomatics', homeController.infomatics);
