@@ -71,9 +71,9 @@ app.set('view engine', 'hbs');
 
 
 hbs.registerPartials(__dirname + '/views/partials');
-hbs.registerPartial('partial', fs.readFileSync(__dirname + '/views/partial.hbs', 'utf8'));
-hbs.registerPartial('footer', fs.readFileSync(__dirname + '/views/footer.hbs', 'utf8'));
-hbs.registerPartial('header', fs.readFileSync(__dirname + '/views/header.hbs', 'utf8'));
+hbs.registerPartial('partial', fs.readFileSync(__dirname + '/views/partials/partial.hbs', 'utf8'));
+hbs.registerPartial('footer', fs.readFileSync(__dirname + '/views/partials/footer.hbs', 'utf8'));
+hbs.registerPartial('header', fs.readFileSync(__dirname + '/views/partials/header.hbs', 'utf8'));
 var blocks = {};
 
 hbs.registerHelper('extend', function(name, context) {
@@ -143,8 +143,21 @@ app.use(function(req, res, next) {
 app.get('/', homeController.index);
 app.get('/about', homeController.about);
 app.get('/news', homeController.news);
-app.get('/team', homeController.team);
 
+
+// app.get('/team', homeController.team);
+
+
+// WORKSTREAM ROUTES
+
+app.get('/workstreams', homeController.workstreams);
+app.get('/workstreams/procurement', homeController.procurement);
+app.get('/workstreams/consistencyincare', homeController.consistency);
+app.get('/workstreams/collaborativeworking', homeController.collaborative);
+app.get('/workstreams/specialist-services', homeController.specialist);
+app.get('/workstreams/locums', homeController.locums);
+app.get('/workstreams/infomatics', homeController.infomatics);
+app.get('/workstreams/sharing', homeController.sharing);
 
 // CONTACT US ROUTES
 app.get('/contact', contactController.getContact);
