@@ -414,6 +414,10 @@ fieldset[disabled] .btn-shfchild.active {
   background-color: #fff;
 }
 
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+color: #000000;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
