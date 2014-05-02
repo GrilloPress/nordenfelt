@@ -318,8 +318,98 @@ bt {
 }
 
 #secondbrand {
-  background-color: #89AFA3;
+  background-color: #8bcbbd;
   background-size: cover;
+}
+
+/* BUTTONS */
+
+/* DARK BLUE FOR DONNY HOSPITAL */
+
+.btn-doncaster {
+  color: #fff;
+  background-color: #03386f;
+  border-color: #163453;
+}
+.btn-doncaster:hover,
+.btn-doncaster:focus,
+.btn-doncaster:active,
+.btn-doncaster.active,
+.open .dropdown-toggle.btn-doncaster {
+  color: #fff;
+  background-color: #336090;
+  border-color: #81A3C7;
+}
+.btn-doncaster:active,
+.btn-doncaster.active,
+.open .dropdown-toggle.btn-doncaster {
+  background-image: none;
+}
+.btn-doncaster.disabled,
+.btn-doncaster[disabled],
+fieldset[disabled] .btn-doncaster,
+.btn-doncaster.disabled:hover,
+.btn-doncaster[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-doncaster.disabled:focus,
+.btn-doncaster[disabled]:focus,
+fieldset[disabled] .btn-doncaster:focus,
+.btn-doncaster.disabled:active,
+.btn-doncaster[disabled]:active,
+fieldset[disabled] .btn-doncaster:active,
+.btn-doncaster.disabled.active,
+.btn-doncaster[disabled].active,
+fieldset[disabled] .btn-doncaster.active {
+  background-color: #03386f;
+  border-color: #163453;
+}
+.btn-doncaster .badge {
+  color: #03386f;
+  background-color: #fff;
+}
+
+/* ORANGE FOR SHEFF CHILDREN'S HOSPITAL*/
+
+.btn-shfchild {
+  color: #fff;
+  background-color: #ee7f00;
+  border-color: #d58512;
+}
+.btn-shfchild:hover,
+.btn-shfchild:focus,
+.btn-shfchild:active,
+.btn-shfchild.active,
+.open .dropdown-toggle.btn-shfchild {
+  color: #fff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+.btn-shfchild:active,
+.btn-shfchild.active,
+.open .dropdown-toggle.btn-shfchild {
+  background-image: none;
+}
+.btn-shfchild.disabled,
+.btn-shfchild[disabled],
+fieldset[disabled] .btn-shfchild,
+.btn-shfchild.disabled:hover,
+.btn-shfchild[disabled]:hover,
+fieldset[disabled] .btn-shfchild:hover,
+.btn-shfchild.disabled:focus,
+.btn-shfchild[disabled]:focus,
+fieldset[disabled] .btn-shfchild:focus,
+.btn-shfchild.disabled:active,
+.btn-shfchild[disabled]:active,
+fieldset[disabled] .btn-shfchild:active,
+.btn-shfchild.disabled.active,
+.btn-shfchild[disabled].active,
+fieldset[disabled] .btn-shfchild.active {
+  background-color: #ee7f00;
+  border-color: #d58512;
+}
+.btn-shfchild .badge {
+  color: #ee7f00;
+  background-color: #fff;
 }
 
 /* RESPONSIVE CSS
