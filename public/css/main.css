@@ -319,8 +319,40 @@ bt {
   color: #FFFFFF;
 }
 
-#secondbrand {
+/* TRUST ID BANDSTRIPES */
+
+#sthbrand {
   background-color: #8bcbbd;
+  background-size: cover;
+}
+
+#midyorkbrand {
+  background-color: #d15094;
+  background-size: cover;
+}
+
+#barnsleybrand {
+  background-color: #96c147;
+  background-size: cover;
+}
+
+#chesterfieldbrand {
+  background-color: #008884;
+  background-size: cover;
+}
+
+#doncasterbrand {
+  background-color: #03386f;
+  background-size: cover;
+}
+
+#rotherhambrand {
+  background-color: #7e549a;
+  background-size: cover;
+}
+
+#sheffchildbrand {
+  background-color: #ee7f00;
   background-size: cover;
 }
 

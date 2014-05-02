@@ -157,7 +157,7 @@ app.get('/workstreams/collaborative-working', homeController.collaborative);
 app.get('/workstreams/specialist-services', homeController.specialist);
 app.get('/workstreams/locums', homeController.locums);
 app.get('/workstreams/infomatics', homeController.infomatics);
-app.get('/workstreams/sharing', homeController.sharing);
+app.get('/workstreams/sharing-and-adopting-good-practices', homeController.sharing);
 
 // CONTACT US ROUTES
 app.get('/contact', contactController.getContact);
