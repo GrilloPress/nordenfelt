@@ -280,6 +280,10 @@ bt {
   color: white;
 }
 
+#lightbreaker {
+  background-color: #FFFFFF;
+}
+
 .featurette-divider {
   margin: 20px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -448,6 +452,10 @@ fieldset[disabled] .btn-shfchild.active {
 
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
 color: #000000;
+}
+
+#lightbreaker {
+  background-color: #FFFFFF;
 }
 
 /* RESPONSIVE CSS
