@@ -62,7 +62,7 @@ var day = hour * 24;
 var week = day * 7;
 
 var csrfWhitelist = [
-  '/contact'
+  // '/contact'
 ];
 
 app.set('port', process.env.PORT || 3000);
@@ -71,9 +71,9 @@ app.set('view engine', 'hbs');
 
 
 hbs.registerPartials(__dirname + '/views/partials');
-hbs.registerPartial('partial', fs.readFileSync(__dirname + '/views/partial.hbs', 'utf8'));
-hbs.registerPartial('footer', fs.readFileSync(__dirname + '/views/footer.hbs', 'utf8'));
-hbs.registerPartial('header', fs.readFileSync(__dirname + '/views/header.hbs', 'utf8'));
+hbs.registerPartial('partial', fs.readFileSync(__dirname + '/views/partials/partial.hbs', 'utf8'));
+hbs.registerPartial('footer', fs.readFileSync(__dirname + '/views/partials/footer.hbs', 'utf8'));
+hbs.registerPartial('header', fs.readFileSync(__dirname + '/views/partials/header.hbs', 'utf8'));
 var blocks = {};
 
 hbs.registerHelper('extend', function(name, context) {
@@ -143,7 +143,29 @@ app.use(function(req, res, next) {
 app.get('/', homeController.index);
 app.get('/about', homeController.about);
 app.get('/news', homeController.news);
-app.get('/team', homeController.team);
+
+
+// app.get('/team', homeController.team);
+
+
+// WORKSTREAM ROUTES
+
+app.get('/workstreams', homeController.workstreams);
+app.get('/workstreams/procurement', homeController.procurement);
+app.get('/workstreams/consistency-in-care', homeController.consistency);
+app.get('/workstreams/collaborative-working', homeController.collaborative);
+app.get('/workstreams/specialist-services', homeController.specialist);
+app.get('/workstreams/locums', homeController.locums);
+app.get('/workstreams/infomatics', homeController.infomatics);
+app.get('/workstreams/sharing-and-adopting-good-practices', homeController.sharing);
+
+// CONTACT US ROUTES
+app.get('/contact', contactController.getContact);
+app.post('/contact', contactController.postContact);
+
+// USER ROUTES
+
+/*
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);
@@ -153,8 +175,6 @@ app.get('/reset/:token', userController.getReset);
 app.post('/reset/:token', userController.postReset);
 app.get('/signup', userController.getSignup);
 app.post('/signup', userController.postSignup);
-app.get('/contact', contactController.getContact);
-app.post('/contact', contactController.postContact);
 
 /** FUTURE USE
  * 

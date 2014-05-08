@@ -1,28 +1,42 @@
 {{> header}}
 
-        <div class="container">
+<div class="row" id="sthbrand">
+  <div class="container centered">
+    <div class="backblock">
+      <h1 id="whiteheading">{{title}}</h1>
+      <p class="lead lighttext">Working Together is a partnership to deliver high quality, efficient patient care for South Yorkshire, Mid Yorkshire and North Derbyshire</p>
+
+      <p>
+        <br>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+        <div class="container" id="contactform">
             <div id="flash"></div>
             <div class="page-header">
                 <h3>Contact Form</h3>
             </div>
-            <form role="form" method="POST" class="form-horizontal">
-                <!-- <input type="hidden" name="_csrf" value=" "> -->
+            <form role="form" method="POST" class="form-horizontal" id="attributeForm">
+                <input type="hidden" name="_csrf" value="{{_csrf}}">
                 <div class="form-group">
                     <label for="name" class="col-sm-2 control-label">Name</label>
                     <div class="col-sm-8">
-                        <input type="text" name="name" id="name" autofocus class="form-control">
+                        <input type="text" name="name" id="name" autofocus class="form-control" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-8">
-                        <input type="text" name="email" id="email" class="form-control">
+                        <input type="email" name="email" id="email" class="form-control" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="message" class="col-sm-2 control-label">Body</label>
                     <div class="col-sm-8">
-                        <textarea type="text" name="message" id="message" rows="7" class="form-control"></textarea>
+                        <textarea type="text" name="message" id="message" rows="7" class="form-control" required></textarea>
                     </div>
                 </div>
                 <div class="form-group">
@@ -32,5 +46,17 @@
                 </div>
             </form>
         </div>
+
+<div class="row" id="sheffchildbrand">
+  <div class="container centered">
+    <div class="backblock">
+      <h1 class="lighttext">Learn more</h1>
+      <p class="lead lighttext">A partnership to deliver high quality, efficient patient care for South Yorkshire, Mid Yorkshire and North Derbyshire</p>
+      <p><a class="btn btn-doncaster btn-lg" role="button" href="/news">Find out more</a>
+      </p>
+    </div>
+  </div>
+</div>
+
 
 {{> footer}}

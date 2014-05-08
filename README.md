@@ -12,3 +12,17 @@ small sites and apps with JavaScript end to end.
 Nordenfelt is the name of a old class of Submarine created by Thorsten Nordenfelt
 
 The Ottoman submarine Abdülhamid (1886) was the first submarine in history to fire a torpedo whilst submerged. It was a Nordenfelt class sub.
+
+**RoadMap**
+
+I will develop this system for one installation of an example website.
+
+Then clean it up so that it returns to a boilerplate which can be useful to quickly set up a website with:
+
+Home page
+About page
+Team page
+Contact page
+News page (blog)
+
+Using: Express, MongoDB, Bootstrap 3 (with polyfills for IE7-9 friendliness because I build things for ENT users too!)

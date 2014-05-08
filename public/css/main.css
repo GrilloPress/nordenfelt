@@ -5,8 +5,10 @@
  * Extensively altered and added to by Andrew Duckworth for Nordenfelt and the Working Together team.
  *
  */
+ 
+ /* ENSURE USING CORRECT HTTP/S FOR ENVIRONMENT! */
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
   	background-color: #ffffff;
@@ -86,7 +88,7 @@ a:after {
 
 .ieroom {
     display: block;
-    height: 65px;
+    height: 43px;
     border: 0;
     border-top: 0px solid #ccc;
     margin: 1em 0;
@@ -94,12 +96,21 @@ a:after {
 }
 
 .cathedral {
-    height: 162px;
+    height: 142px;
     border: 0;
     border-top: 0px;
     margin: 1em 0;
     padding: 0px;
-    padding-bottom: 0x;
+    padding-bottom: 0;
+}
+
+.feature {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 0px;
+    margin: 1em 0;
+    padding: 1px;
 }
 
 
@@ -109,8 +120,8 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
+	padding-bottom: 55px;
+	padding-top: 65px;
 }
 
 .navbar-inverse {
@@ -161,8 +172,8 @@ a:after {
 /* +++++ WRAP SECTIONS +++++ */
 
 #brandwrap {
-	padding-top: 60px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 0;
 
 }
 
@@ -269,8 +280,12 @@ bt {
   color: white;
 }
 
+#lightbreaker {
+  background-color: #FFFFFF;
+}
+
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -281,6 +296,196 @@ bt {
 }
 
 
+.brandhead {
+  padding: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-image:url('/img/1.jpg');
+  background-size:cover;
+}
+
+.lighttext {
+  color: #fff;
+}
+
+#whiteheading {
+  color: #ffffff;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.endblock {
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+/* TRUST ID BANDSTRIPES */
+
+#sthbrand {
+  background-color: #8bcbbd;
+  background-size: cover;
+}
+
+#midyorkbrand {
+  background-color: #d15094;
+  background-size: cover;
+}
+
+#barnsleybrand {
+  background-color: #96c147;
+  background-size: cover;
+}
+
+#chesterfieldbrand {
+  background-color: #008884;
+  background-size: cover;
+}
+
+#doncasterbrand {
+  background-color: #03386f;
+  background-size: cover;
+}
+
+#rotherhambrand {
+  background-color: #7e549a;
+  background-size: cover;
+}
+
+#sheffchildbrand {
+  background-color: #ee7f00;
+  background-size: cover;
+}
+
+#workstreambrand {
+  background-color: #e7e3e1;
+  background-size: cover;
+}
+
+#newsbrand {
+  background-color: #e7e3e1;
+  padding: 5px;
+}
+
+.blockpadding {
+  padding: 10px;
+}
+
+.newsblock {
+  margin: 8px;
+}
+
+/* BUTTONS */
+
+/* DARK BLUE FOR DONNY HOSPITAL */
+
+.btn-doncaster {
+  color: #fff;
+  background-color: #03386f;
+  border-color: #163453;
+}
+.btn-doncaster:hover,
+.btn-doncaster:focus,
+.btn-doncaster:active,
+.btn-doncaster.active,
+.open .dropdown-toggle.btn-doncaster {
+  color: #fff;
+  background-color: #336090;
+  border-color: #81A3C7;
+}
+.btn-doncaster:active,
+.btn-doncaster.active,
+.open .dropdown-toggle.btn-doncaster {
+  background-image: none;
+}
+.btn-doncaster.disabled,
+.btn-doncaster[disabled],
+fieldset[disabled] .btn-doncaster,
+.btn-doncaster.disabled:hover,
+.btn-doncaster[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-doncaster.disabled:focus,
+.btn-doncaster[disabled]:focus,
+fieldset[disabled] .btn-doncaster:focus,
+.btn-doncaster.disabled:active,
+.btn-doncaster[disabled]:active,
+fieldset[disabled] .btn-doncaster:active,
+.btn-doncaster.disabled.active,
+.btn-doncaster[disabled].active,
+fieldset[disabled] .btn-doncaster.active {
+  background-color: #03386f;
+  border-color: #163453;
+}
+.btn-doncaster .badge {
+  color: #03386f;
+  background-color: #fff;
+}
+
+/* ORANGE FOR SHEFF CHILDREN'S HOSPITAL*/
+
+.btn-shfchild {
+  color: #fff;
+  background-color: #ee7f00;
+  border-color: #d58512;
+}
+.btn-shfchild:hover,
+.btn-shfchild:focus,
+.btn-shfchild:active,
+.btn-shfchild.active,
+.open .dropdown-toggle.btn-shfchild {
+  color: #fff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+.btn-shfchild:active,
+.btn-shfchild.active,
+.open .dropdown-toggle.btn-shfchild {
+  background-image: none;
+}
+.btn-shfchild.disabled,
+.btn-shfchild[disabled],
+fieldset[disabled] .btn-shfchild,
+.btn-shfchild.disabled:hover,
+.btn-shfchild[disabled]:hover,
+fieldset[disabled] .btn-shfchild:hover,
+.btn-shfchild.disabled:focus,
+.btn-shfchild[disabled]:focus,
+fieldset[disabled] .btn-shfchild:focus,
+.btn-shfchild.disabled:active,
+.btn-shfchild[disabled]:active,
+fieldset[disabled] .btn-shfchild:active,
+.btn-shfchild.disabled.active,
+.btn-shfchild[disabled].active,
+fieldset[disabled] .btn-shfchild.active {
+  background-color: #ee7f00;
+  border-color: #d58512;
+}
+.btn-shfchild .badge {
+  color: #ee7f00;
+  background-color: #fff;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+color: #000000;
+}
+
+#lightbreaker {
+  background-color: #FFFFFF;
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
