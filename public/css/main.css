@@ -308,6 +308,10 @@ bt {
   color: #fff;
 }
 
+#whiteheading {
+  color: #ffffff;
+}
+
 .thumbnail {
     position: relative;
     padding: 0;
@@ -358,6 +362,24 @@ bt {
 #sheffchildbrand {
   background-color: #ee7f00;
   background-size: cover;
+}
+
+#workstreambrand {
+  background-color: #e7e3e1;
+  background-size: cover;
+}
+
+#newsbrand {
+  background-color: #e7e3e1;
+  padding: 5px;
+}
+
+.blockpadding {
+  padding: 10px;
+}
+
+.newsblock {
+  margin: 8px;
 }
 
 /* BUTTONS */
@@ -456,6 +478,13 @@ color: #000000;
 
 #lightbreaker {
   background-color: #FFFFFF;
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
 }
 
 /* RESPONSIVE CSS
